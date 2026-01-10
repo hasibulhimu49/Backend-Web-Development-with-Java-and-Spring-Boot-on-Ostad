@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "6fd2b9c4-b94c-419c-a445-9a9737e8b8ff",
+		"name": "TransactionManagementAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51101766",
+		"_collection_link": "https://mohammadhasibulhasanpga4149-6916044.postman.co/workspace/MOHAMMAD-HASIBUL-HASAN's-Worksp~66105cb7-b8cc-4fa8-8b23-910da0b32d7e/collection/51101766-6fd2b9c4-b94c-419c-a445-9a9737e8b8ff?action=share&source=collection_link&creator=51101766"
+	},
+	"item": [
+		{
+			"name": "Create Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"t_title\":\"after delete\",\r\n    \"t_amount\":35400.0,\r\n    \"t_type\":\"equal\",\r\n    \"t_category\":\"testing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/transactions",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/transactions",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/transactions/3",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"transactions",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Transaction",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Mohammad Hasibul Hasan\",\r\n    \"amount\":100.00,\r\n    \"type\":\"Revenue\",\r\n    \"category\":\"Food and Glosary\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/transactions/3",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"transactions",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Transaction",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": ""
+		}
+	]
+}

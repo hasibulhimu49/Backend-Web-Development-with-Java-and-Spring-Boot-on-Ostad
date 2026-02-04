@@ -1,0 +1,206 @@
+{
+  "info": {
+    "_postman_id": "cbeb14c8-bf79-4c51-91db-d05f172f1d16",
+    "name": "ContactManagerAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51101766",
+    "_collection_link": "https://go.postman.co/collection/51101766-cbeb14c8-bf79-4c51-91db-d05f172f1d16?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "  {\r\n    \"firstname\": \"Hamas\",\r\n    \"lastname\": \"Hisbulla\",\r\n    \"phone\": \"01712345678\",\r\n    \"email\": \"john@example.com\",\r\n    \"category\": \"work\",\r\n    \"isactive\": \"true\"\r\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contacts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Mohammad Hasibul\",\r\n    \"lastname\": \"Hasan\",\r\n    \"phone\": \"01705-064149\",\r\n    \"email\": \"hasibulx26@gmail.com\",\r\n    \"active\": true,\r\n    \"category\": \"work\"\r\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contacts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get by Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Mohammad Hasibul\",\r\n    \"lastname\": \"Hasan\",\r\n    \"phone\": \"01705-064149\",\r\n    \"email\": \"hasibulx26@gmail.com\",\r\n    \"active\": true,\r\n    \"category\": \"work\"\r\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contacts/52",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "contacts",
+            "52"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Mehedi\",\r\n    \"lastname\": \"Hasan Pranto\",\r\n    \"phone\": \"01566232345\",\r\n    \"email\": \"nasimx26@gmail.com\",\r\n    \"active\": \"false\",\r\n    \"category\": \"work\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contacts/52",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "contacts",
+            "52"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Mohammad Hasibul\",\r\n    \"lastname\": \"Hasan\",\r\n    \"phone\": \"01705-064149\",\r\n    \"email\": \"hasibulx26@gmail.com\",\r\n    \"active\": true,\r\n    \"category\": \"work\"\r\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contacts/52",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "contacts",
+            "52"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Advanced search",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Mohammad Hasibul\",\r\n    \"lastname\": \"Hasan\",\r\n    \"phone\": \"01705-064149\",\r\n    \"email\": \"hasibulx26@gmail.com\",\r\n    \"active\": true,\r\n    \"category\": \"work\"\r\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/contacts/specification?isActive=false&firstname=Urdffo",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "contacts",
+            "specification"
+          ],
+          "query": [
+            {
+              "key": "isActive",
+              "value": "false"
+            },
+            {
+              "key": "firstname",
+              "value": "Urdffo"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}

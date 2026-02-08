@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: product-inventory-api
+
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /my-h2      #Changed manually to default  /h2-console       #Now  http://localhost:8080/my-h2
+
+
+logging:
+  level:
+    root: INFO
+    com.example.product_inventory_api.controller: DEBUG
+    com.example.product_inventory_api.service: DEBUG
+
+

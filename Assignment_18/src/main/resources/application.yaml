@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: environment-profiles-API
+
+ # profiles:
+  #  active: prod
+
+app:
+  message: "Welcome to the development environment!"
+  api:
+    url: "http://localhost:5432/dev/api"

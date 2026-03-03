@@ -1,0 +1,11 @@
+spring:
+
+
+ # config:
+  #  activate:
+   #   on-profile: prod         ai gula na bollea o problem nai
+
+app:
+  message: "Welcome to the Production System!"
+  api:
+    url: "https://localhost:5432/prod/api"
